@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Cumple Ivone 🐸🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="bg"></div>
+
+  <main class="wrap">
+    <header class="card hero">
+      <div class="badge">🐸 Un detalle con cariño</div>
+
+      <h1>
+        ¡Feliz cumpleaños, <span class="accent">Ivone Reintsch Castellon</span>! 🎉
+      </h1>
+
+      <p class="subtitle">
+        Hoy quería regalarte algo distinto: una pequeña página hecha con calma, intención,
+        y un poquito de código… como un sapito que aparece para recordarte lo valiosa que eres. 🌿
+      </p>
+
+      <div class="actions">
+        <button class="btn" id="btnSurprise">Abrir mi sorpresa ✨</button>
+        <button class="btn ghost" id="btnMusic" title="Activa/desactiva música">Música ♪</button>
+      </div>
+
+      <p class="hint">
+    
+      </p>
+    </header>
+
+    <section class="grid">
+      <article class="card">
+        <h2>Un mensajito para ti 💌</h2>
+        <p id="message">
+          Doña Ivone, hoy celebro tu vida y todo lo bonito que traes a quienes te rodean.
+          Que este nuevo año te regale momentos tranquilos, risas sinceras y metas que se cumplan
+          sin perder tu esencia.
+        </p>
+
+        <div class="quote">
+          <span>“</span>
+          <p id="quote">
+            Que tu día sea bonito, alegre y lleno de cariño… como una tarde en un jardín después de la lluvia. 🐸🌧️
+          </p>
+          <span>”</span>
+        </div>
+
+        <p class="gratitude">
+          Gracias, por todo el apoyo y por los consejos que das: se notan, ayudan, y hacen la diferencia. 💛
+        </p>
+      </article>
+
+      <article class="card">
+        <h2>Pequeños “recuerdos” 🐸</h2>
+        <p class="muted">
+          Tres postales para acompañar este día.
+        </p>
+
+        <div class="gallery3">
+          <figure class="postcard">
+            <img src="img/cafe.jpg" alt="Recuerdo 1">
+            <figcaption>Un momento especial</figcaption>
+          </figure>
+
+          <figure class="postcard">
+            <img src="img/cic.jpg" alt="Recuerdo 2">
+            <figcaption>Sonrisas que valen oro</figcaption>
+          </figure>
+
+          <figure class="postcard">
+            <img src="img/ratity.jpg" alt="Recuerdo 3">
+            <figcaption>Recuerdos que se quedan</figcaption>
+          </figure>
+        </div>
+      </article>
+
+      <article class="card wide">
+        <h2>🎁 La sorpresa</h2>
+        <p class="muted">Toca el botón para abrir. Si quieres, luego cambiamos el texto para que sea más personal.</p>
+
+        <div class="surprise" id="surprise" hidden>
+          <div class="surprise-inner">
+            <h3>¡Sorpresa, Ivone! ✨🐸</h3>
+
+            <img src="img/torta.jpg" alt="Sorpresa especial" class="surprise-img">
+
+            <p id="surpriseText">
+              Le deseo un cumpleaños lleno de paz y alegria, de metas cumplidas y de momentos que te hagan sonreír de verdad.
+              Que nunca te falte cariño, salud y razones bonitas para seguir creciendo.
+            </p>
+
+            <div class="mini-card">
+              <div class="mini-emoji">🐸</div>
+              <div>
+                <div class="mini-title">Recordatorio sapito</div>
+                <div class="mini-text">Eres importante, y tu forma de apoyar a los demás se nota.</div>
+              </div>
+            </div>
+
+            <div class="footer-row">
+              <span class="tag">Hecho con 💛 — Gus Davalos</span>
+              <button class="btn small" id="btnAgain">Confeti otra vez 🎉</button>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>Hecho por <strong>Gus Davalos</strong> • <span id="year"></span></p>
+    </footer>
+  </main>
+
+  <audio id="audio" preload="none" loop>
+    <source src="audio/tango.mp3" type="audio/mpeg" />
+  </audio>
+
+  <canvas id="confetti" aria-hidden="true"></canvas>
+  <script src="script.js"></script>
+</body>
+</html>
